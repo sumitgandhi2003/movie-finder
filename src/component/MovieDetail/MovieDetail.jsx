@@ -80,7 +80,7 @@ const MovieDetail = () => {
               <span>Box Office Collection:</span> <span>{data?.BoxOffice}</span>
             </div>
           )}
-          {data.imdbRating && (
+          {data.imdbRating != "N/A" && (
             <div>
               <span>Rating:</span> <span>{data?.imdbRating}/10</span>
             </div>
