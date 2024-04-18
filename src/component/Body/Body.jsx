@@ -8,11 +8,8 @@ import { Link } from "react-router-dom";
 const Body = () => {
   const [searchInput, setSearchInput] = useState("");
   const data = useFetchData(searchInput);
-  console.log(data);
-  // localStorage.setItem("input", searchInput);
   const handleChange = (e) => {
     setSearchInput(e.target.value);
-    localStorage.setItem("input", e.target.value);
   };
   return (
     <div className="mt-6 grid gap-6">
@@ -22,6 +19,7 @@ const Body = () => {
           placeholder={"Search"}
           handleChange={handleChange}
         />
+        <button className="">Search</button>
       </div>
       <div className=" flex flex-wrap p-2 gap-2 justify-center">
         {data?.Search?.length > 0 ? (

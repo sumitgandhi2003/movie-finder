@@ -7,7 +7,6 @@ export const useFetchData = (search = "", movieId = " ") => {
   useEffect(() => {
     fetchData();
   }, [search]);
-  console.log(search);
   const fetchData = async () => {
     const response = await fetch(
       CDN_URL +

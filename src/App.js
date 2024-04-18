@@ -6,7 +6,7 @@ import Contact from "./component/Contact/Contact";
 import MovieDetail from "./component/MovieDetail/MovieDetail";
 const App = () => {
   return (
-    <div className="App  w-[100vw] h-[100vh]">
+    <div className="App   w-full h-full xl:h-screen">
       <Navbar />
       {/* <Body /> */}
       <Outlet />
