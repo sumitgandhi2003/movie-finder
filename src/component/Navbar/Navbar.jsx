@@ -5,7 +5,7 @@ const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
 
   return (
-    <div className="bg-gray-800 py-4 h-max">
+    <div className="bg-gray-800 py-4 h-max p-2">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-lg font-bold">Movies Finder</div>
         <div className="flex items-center">

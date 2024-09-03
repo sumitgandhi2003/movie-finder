@@ -12,14 +12,14 @@ const Body = () => {
     setSearchInput(e.target.value);
   };
   return (
-    <div className="mt-6 grid gap-6">
-      <div className="w-full flex gap-2 justify-center">
+    <div className="mt-6  grid gap-6 p-3">
+      <div className="w-full flex flex-wrap gap-2 justify-center">
         <Input
           searchInput={searchInput}
           placeholder={"Search"}
           handleChange={handleChange}
         />
-        <button className="">Search</button>
+        <button className=" p-2 bg-blue-900 text-white rounded">Search</button>
       </div>
       <div className=" flex flex-wrap p-2 gap-2 justify-center">
         {data?.Search?.length > 0 ? (
