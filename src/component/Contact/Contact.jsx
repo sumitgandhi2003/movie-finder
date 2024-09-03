@@ -41,7 +41,7 @@ const Contact = () => {
     });
   };
   return (
-    <div className="contact-us-container w-full h-full flex relative justify-center items-center p-4 mt-4 font-mono ">
+    <div className="contact-us-container w-full h-full flex relative justify-center items-center p-4 mt-4 font-mono -z-10 ">
       <form
         onSubmit={submithandle}
         className="contact w-[600px] h-fit p-8 flex gap-5 flex-col justify-between items-center bg-white rounded-xl shadow-lg"
