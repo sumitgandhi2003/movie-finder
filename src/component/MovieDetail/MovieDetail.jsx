@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const minHrs = (time) => {
   let min = "";
   for (let i = 0; i < time.length; i++) {
-    if (time[i] == " ") {
+    if (time[i] === " ") {
       break;
     }
     min += time[i];
@@ -51,9 +51,11 @@ const MovieDetail = () => {
               <span>Writer:</span> <span>{data?.Writer}</span>
             </div>
           )}
-          <div>
-            <span>Time:</span> <span>{minHrs(data?.Runtime)}</span>
-          </div>
+          {data?.Runtime !== "N/A" && (
+            <div>
+              <span>Time:</span> <span>{minHrs(data?.Runtime)}</span>
+            </div>
+          )}
 
           {data.Type && (
             <div>
@@ -80,7 +82,7 @@ const MovieDetail = () => {
               <span>Box Office Collection:</span> <span>{data?.BoxOffice}</span>
             </div>
           )}
-          {data.imdbRating != "N/A" && (
+          {data.imdbRating !== "N/A" && (
             <div>
               <span>Rating:</span> <span>{data?.imdbRating}/10</span>
             </div>
